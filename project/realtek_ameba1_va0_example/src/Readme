@@ -1,0 +1,11 @@
+Concept:
+  Launch three threads to handle
+  1. Wifi standalone mode, which will be connected to WiFi AP 'LAB-RT0'
+  2. upnp ssdp multicast on group ip '239.255.255.250', port 1900
+  3. upnp soap, which will response with device description.
+
+How to use:
+  1. Add upnp_demo.c, upnp_upnp.c, upnp_httpd.c into Makefile
+  2. Add function call "upnp_demo_init()" in main.c
+  3. Compile
+  4. Write into board and reboot
